@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tetris Game Ruslan</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="game-info">
+        <h1>Tetris Ruslan</h1>
+        <div class="score-container">
+          <p>Score: <span id="score">0</span></p>
+          <p>Level: <span id="level">1</span></p>
+          <p>Lines: <span id="lines">0</span></p>
+        </div>
+        <div class="speed-controls">
+          <h2>Speed</h2>
+          <div class="speed-buttons">
+            <button id="speed1x" class="speed-btn active">1x</button>
+            <button id="speed2x" class="speed-btn">2x</button>
+            <button id="speed3x" class="speed-btn">3x</button>
+          </div>
+        </div>
+        <div class="controls">
+          <h2>Controls</h2>
+          <p>← → : Move left/right</p>
+          <p>↑ : Rotate</p>
+          <p>↓ : Move down</p>
+          <p>Space : Drop</p>
+        </div>
+      </div>
+      <canvas id="tetris" width="300" height="600"></canvas>
+      <div class="mobile-controls">
+        <div class="mobile-row">
+          <button id="rotate-btn" class="mobile-btn">↑</button>
+        </div>
+        <div class="mobile-row">
+          <button id="left-btn" class="mobile-btn">←</button>
+          <button id="down-btn" class="mobile-btn">↓</button>
+          <button id="right-btn" class="mobile-btn">→</button>
+        </div>
+        <div class="mobile-row">
+          <button id="drop-btn" class="mobile-btn">Drop</button>
+        </div>
+      </div>
+    </div>
+    <script src="js/controls.js"></script>
+    <script src="js/tetris.js"></script>
+  </body>
+</html>
